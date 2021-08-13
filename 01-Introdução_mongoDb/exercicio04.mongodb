@@ -1,0 +1,4 @@
+use('local');
+
+db.bios.find({ 'name.first': 'John'}).pretty();
+
