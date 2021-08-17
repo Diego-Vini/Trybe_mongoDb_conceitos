@@ -1,0 +1,8 @@
+use('business');
+
+db.restaurants.find({
+    $nor: [
+      {rating: {$eq: 1}},
+      {cousine:  'American'}
+    ]
+}).count();
